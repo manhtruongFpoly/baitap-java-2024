@@ -1,15 +1,50 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
-
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            System.out.println("i = " + i);
-        }
+    	  Scanner sc=new Scanner(System.in);
+          int chon;
+         
+          while (true) {            
+            menu();
+            chon=Integer.parseInt(sc.nextLine());
+            switch(chon){
+                case 1:
+                	System.out.println("1");
+                    break;
+                     case 2:
+                    	 System.out.println("2");
+                    break;
+                     case 3:
+                    	 System.out.println("3");
+                    break;
+                     case 4:
+                    	 System.out.println("4");
+                    break; 
+                     case 5:
+                    System.exit(0);
+                         System.out.println("Thank for use");
+                    break;
+                    
+                     default:
+                         System.out.println("Chọn lại");
+            }
+             
+          }
+    	
+    	
+    }
+    
+    
+    public static void menu(){
+        
+        System.out.println("1.Thêm / cập nhật / xóa, minh chứng ");
+       
+        System.out.println("2.Tìm kiếm minh chứng");
+        System.out.println("3.Xem DS minh chứng ");
+        System.out.println("4.Xem Ds minh chứng  theo ngày tạo");
+        
+        System.out.println("5.Out");
+       System.out.print("Mời bạn chọn:");
     }
 }
